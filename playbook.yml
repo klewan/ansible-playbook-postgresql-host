@@ -1,0 +1,7 @@
+---
+- name: Configure PostgreSQL database server
+  hosts: pg-servers
+  become: true
+  roles:
+    - { role: postgresql-host, tags: postgresql_host }
+
